@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8382
+spring:
+  application:
+    name: spring-demo-service-feign

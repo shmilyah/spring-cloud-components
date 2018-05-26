@@ -12,6 +12,7 @@
         <module>eureka-service</module>
         <module>spring-demo-service</module>
         <module>spring-demo-service-ribbon</module>
+        <module>spring-demo-service-feign</module>
     </modules>
 
     <properties>
