@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka-service</module>
+        <module>spring-demo-service</module>
     </modules>
 
     <properties>
