@@ -10,6 +10,7 @@
         <module name="spring-demo-service" />
         <module name="spring-demo-service-feign" />
         <module name="spring-demo-service-ribbon" />
+        <module name="springboot-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="spring-demo-service" target="1.5" />
       <module name="spring-demo-service-feign" target="1.5" />
       <module name="spring-demo-service-ribbon" target="1.5" />
+      <module name="springboot-admin" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

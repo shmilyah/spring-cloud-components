@@ -2,6 +2,10 @@
 
 一款基于 SpringCloud 组件构建的分布式服务架构（待完善），可以作学习之用
 
+SpringCloud 版本 Finchley.RC1
+
+SpringBoot 版本 2.0.1.RELEASE
+
 ## 系统module
 
 ### eureka-service

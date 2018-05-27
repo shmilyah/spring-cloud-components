@@ -13,6 +13,7 @@
         <module>spring-demo-service</module>
         <module>spring-demo-service-ribbon</module>
         <module>spring-demo-service-feign</module>
+        <module>springboot-admin</module>
     </modules>
 
     <properties>
@@ -51,7 +52,7 @@
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
