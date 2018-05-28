@@ -4,7 +4,8 @@ spring:
   profiles:
     active:
       - secure
-
+server:
+  port: 8788
 
 # tag::configuration-eureka[]
 eureka:   #<1>
