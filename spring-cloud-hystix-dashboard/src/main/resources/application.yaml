@@ -1,0 +1,6 @@
+server:
+  port: 8580
+
+spring:
+  application:
+    name: spring-cloud-hystrix-dashboard

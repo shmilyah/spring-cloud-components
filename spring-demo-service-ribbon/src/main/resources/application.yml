@@ -7,3 +7,9 @@ server:
 spring:
   application:
     name: spring-demo-service-ribbon
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
