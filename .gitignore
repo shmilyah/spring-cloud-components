@@ -1,1 +1,17 @@
+#Maven
+target/
+#Eclipse
+.project
+.classpath
+.factorypath
+.settings/
+/.apt_generated/
+#Intellij Ieda
+*.iml
 .idea/
+#Others
+.DS_Store
+logs/
+software/
+${logs.path}/
+channel-access/msg/
