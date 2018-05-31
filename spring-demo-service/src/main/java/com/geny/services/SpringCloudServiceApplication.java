@@ -16,11 +16,4 @@ public class SpringCloudServiceApplication {
         SpringApplication.run(SpringCloudServiceApplication.class, args);
     }
 
-//    @Value("${server.port}")
-//    String port;
-//
-//    @RequestMapping("port")
-//    public String getPort() {
-//        return "Hello World, I'm from port : " + port;
-//    }
 }
