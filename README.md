@@ -32,6 +32,6 @@ SpringCloud 的服务注册中心
 
 ### springboot-admin
 
-它是用于监控springboot应用程序的监控系统，应用程序通过Apring Boot Admin Client进行注册（通过HTTP的方式），
-或者使用springcloud来发现（比如：eureka)，UI只是在Spring Boot Actuator端点上的一个AngularJs应用程序
+它是用于监控 Spring Boot 应用程序的监控系统，应用程序通过 Spring Boot Admin Client 进行注册（通过 HTTP 的方式），
+或者使用 Spring Cloud 来发现（比如：Eureka)，UI 只是在 Spring Boot Actuator 端点上的一个 AngularJs 应用程序
 
