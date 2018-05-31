@@ -8,3 +8,12 @@ eureka:
 spring:
   application:
     name: spring-demo-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS

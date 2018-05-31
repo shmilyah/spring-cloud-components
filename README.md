@@ -30,6 +30,10 @@ SpringCloud 的服务注册中心
 
 作为断路器状态的一个组件，提供了数据监控和友好的图形化界面
 
+### spring-cloud-hystrix-dashboard-turbine
+
+把多个hystrix.stream的内容聚合为一个数据源供Dashboard展示
+
 ### springboot-admin
 
 它是用于监控 Spring Boot 应用程序的监控系统，应用程序通过 Spring Boot Admin Client 进行注册（通过 HTTP 的方式），
