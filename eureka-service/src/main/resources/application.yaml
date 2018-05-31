@@ -4,9 +4,15 @@ spring:
   application:
     name: eureka-service
 eureka:
+  instance:
+    hostname: localhost
   client:
+    #由于该应用为注册中心,设置为false,表明不向注册中心注册自己
     register-with-eureka: false
+    #是否从eureka服务器获取注册信息，这里不需要
     fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 logging:
   level:
     com:
