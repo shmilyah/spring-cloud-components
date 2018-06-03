@@ -1,5 +1,7 @@
 package com.geny.ribbon;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
@@ -21,5 +23,10 @@ public class ServiceRibbonApplication {
 	@LoadBalanced
 	RestTemplate restTemplate() {
 		return new RestTemplate();
+	}
+
+	@Bean
+	public IRule ribbonRule() {
+		return new RandomRule();	//这里配置策略，和配置文件对应
 	}
 }

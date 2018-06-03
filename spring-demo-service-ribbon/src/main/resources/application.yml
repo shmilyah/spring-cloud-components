@@ -8,6 +8,10 @@ spring:
   application:
     name: spring-demo-service-ribbon
 
+spring-demo-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
 management:
   endpoints:
     web:
