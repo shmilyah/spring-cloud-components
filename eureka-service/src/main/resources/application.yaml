@@ -1,26 +1,23 @@
-server:
-  port: 8761
 spring:
+  profiles:
+    active: instance2
   application:
     name: eureka-service
+
 eureka:
-  instance:
-    hostname: localhost
   client:
     #由于该应用为注册中心,设置为false,表明不向注册中心注册自己
     register-with-eureka: false
+  server:
+    enable-self-preservation: false
     #是否从eureka服务器获取注册信息，这里不需要
     fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 logging:
   level:
     com:
       netflix:
         eureka: OFF
         discovery: OFF
-
-
 
 management:
   endpoints:
@@ -30,3 +27,28 @@ management:
   endpoint:
       health:
         show-details: ALWAYS
+
+---
+
+spring:
+  profiles: instance1
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+
+---
+spring:
+  profiles: instance2
+
+server:
+  port: 8762
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

@@ -2,8 +2,20 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+#  如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
+  instance:
+    metadata-map:
+      management:
+        context-path: /gateway/actuator
+    health-check-url: http://localhost:${server.port}/gateway/actuator/health
+    status-page-url: http://localhost:${server.port}/gateway/actuator/info
+    home-page-url: http://localhost:${server.port}/
+
 server:
   port: 8382
+  servlet:
+    context-path: /gateway
 spring:
   application:
     name: spring-demo-service-feign
