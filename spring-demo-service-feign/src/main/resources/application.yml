@@ -15,7 +15,7 @@ feign:
 # Ribbon 的负载均衡策略
 spring-demo-service:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.BestAvailableRule
 
 management:
   endpoints:

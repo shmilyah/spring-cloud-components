@@ -6,9 +6,11 @@ spring:
     name: spring-cloud-hystrix-dashboard-turbine
 
 turbine:
+  # 配置 Eureka 中的 serviceId 列表，指定要监控的服务
   app-config: SPRING-DEMO-SERVICE-FEIGN,SPRING-DEMO-SERVICE-RIBBON
   aggregator:
     cluster-config: default
+  # 指定集群名称
   cluster-name-expression: "'default'"
 
 eureka:
