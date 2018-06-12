@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: instance2
+    active: instance1
   application:
     name: eureka-service
 
