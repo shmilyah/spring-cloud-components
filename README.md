@@ -2,6 +2,8 @@
 
 一款基于 SpringCloud 组件构建的分布式服务架构（待完善），可以作学习之用
 
+v1.0 tag 版本是没有使用配置中心
+
 相关文章解读参考：https://blog.csdn.net/hubo_88
 
 SpringCloud 版本 Finchley.RC1
