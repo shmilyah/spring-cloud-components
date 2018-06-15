@@ -1,0 +1,16 @@
+server:
+  port: 8889
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shmilyah/cloud-config-samples.git
+          search-paths: '{application}'
+  application:
+    name: spring-cloud-config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

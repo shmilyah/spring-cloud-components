@@ -16,6 +16,8 @@
         <module>springboot-admin</module>
         <module>spring-cloud-hystrix-dashboard</module>
         <module>spring-cloud-hystrix-dashboard-turbine</module>
+        <module>spring-cloud-config</module>
+        <module>spring-cloud-config-client</module>
     </modules>
 
     <properties>
