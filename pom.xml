@@ -68,15 +68,9 @@
 
     <repositories>
         <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
+            <id>central</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <name>central</name>
         </repository>
         <repository>
             <id>spring-milestones</id>
@@ -85,20 +79,6 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <id>spring-release</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo.spring.io/release</url>
-        </repository>
-        <repository>
-            <id>spring-snapshot</id>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <url>http://repo.spring.io/snapshot</url>
         </repository>
     </repositories>
 
