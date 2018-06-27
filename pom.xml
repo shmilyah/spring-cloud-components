@@ -13,7 +13,7 @@
         <module>spring-demo-service</module>
         <module>spring-demo-service-ribbon</module>
         <module>spring-demo-service-feign</module>
-        <module>springboot-admin</module>
+        <module>spring-boot-admin</module>
         <module>spring-cloud-hystrix-dashboard</module>
         <module>spring-cloud-hystrix-dashboard-turbine</module>
         <module>spring-cloud-config</module>
