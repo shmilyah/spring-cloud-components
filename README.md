@@ -36,8 +36,12 @@ SpringCloud 的服务注册中心
 
 把多个hystrix.stream的内容聚合为一个数据源供Dashboard展示
 
-### springboot-admin
+### spring-boot-admin
 
 它是用于监控 Spring Boot 应用程序的监控系统，应用程序通过 Spring Boot Admin Client 进行注册（通过 HTTP 的方式），
 或者使用 Spring Cloud 来发现（比如：Eureka)，UI 只是在 Spring Boot Actuator 端点上的一个 AngularJs 应用程序
+
+### spring-cloud-gateway
+
+使用 Spring Cloud Zuul 组件实现的服务网关
 
