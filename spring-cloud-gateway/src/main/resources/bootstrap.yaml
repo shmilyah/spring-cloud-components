@@ -1,0 +1,32 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: spring-cloud-config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+zuul:
+  routes:
+#    demoService:
+#      path: /demoService/**
+#      serviceId: spring-demo-service
+    #简洁写法
+    spring-demo-service: /demoService/**
+  ignored-patterns:
+    - /spring-demo-service/port
+    - /demoService/port
