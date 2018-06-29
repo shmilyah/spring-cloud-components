@@ -29,4 +29,4 @@ zuul:
     spring-demo-service: /demoService/**
   ignored-patterns:
     - /spring-demo-service/port
-    - /demoService/port
+#    - /demoService/port
