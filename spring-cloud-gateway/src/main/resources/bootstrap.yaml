@@ -27,6 +27,7 @@ zuul:
 #      serviceId: spring-demo-service
     #简洁写法
     spring-demo-service: /demoService/**
+  #排除某些路由
   ignored-patterns:
     - /spring-demo-service/port
 #    - /demoService/port

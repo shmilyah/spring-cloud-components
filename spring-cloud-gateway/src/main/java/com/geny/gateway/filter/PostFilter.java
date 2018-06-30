@@ -11,6 +11,7 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.SEND_RESPONSE_FILTER_ORDER;
 
 /**
+ * 后置拦截器
  * @author shmilyahu
  * @date 2018/6/29 22:50
  */

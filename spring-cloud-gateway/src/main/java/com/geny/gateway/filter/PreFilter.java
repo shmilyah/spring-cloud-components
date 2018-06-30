@@ -15,6 +15,7 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
 
 /**
+ * 前置拦截器
  * @author shmilyahu
  * @date 2018/6/29 21:51
  */
