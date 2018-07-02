@@ -19,6 +19,8 @@
         <module>spring-cloud-config</module>
         <module>spring-cloud-config-client</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-cloud-service1</module>
+        <module>spring-cloud-service2</module>
     </modules>
 
     <properties>
