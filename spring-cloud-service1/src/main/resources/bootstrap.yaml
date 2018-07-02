@@ -4,8 +4,9 @@ spring:
   application:
     name: service1
   zipkin:
-    #Zipkin Server 的 ip:port
+    #Zipkin Server 的 ip:port，这里换成自己的 Zipkin Server 的 IP 即可
     base-url: http://192.168.174.128:9411/
+  #这里把抽样百分比设置为1，即信息全部采集
   sleuth:
     sampler:
       probability: 1.0
