@@ -5,7 +5,9 @@ spring:
     name: service1
   zipkin:
     #Zipkin Server 的 ip:port，这里换成自己的 Zipkin Server 的 IP 即可
-    base-url: http://192.168.174.128:9411/
+#    base-url: http://192.168.174.128:9411/
+    #为了测试 rabbitmq 的集成，修改为错误指向
+    base-url: http://192.168.174.128:9410/
   #这里把抽样百分比设置为1，即信息全部采集
   sleuth:
     sampler:
