@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
-import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,13 +11,13 @@ import org.springframework.stereotype.Component;
  * @date 2018/7/2 23:54
  */
 @Component
-@EnableBinding({Sink.class})
+@EnableBinding(value = {StreamClient.class})
 public class StreamReceiver {
 
     private Logger logger = LoggerFactory.getLogger(StreamReceiver.class);
 
-    @StreamListener(Sink.INPUT)
-    public void receiver(Object message) {
+    @StreamListener(StreamClient.INPUT)
+    public void receive(Object message) {
         logger.info("StreamReceiver: {}", message);
     }
 }

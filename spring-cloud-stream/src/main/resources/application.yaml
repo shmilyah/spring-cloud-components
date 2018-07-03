@@ -8,3 +8,26 @@ spring:
     port: 5672
     username: guest
     password: guest
+  cloud:
+    stream:
+      bindings:
+        myInput:
+          #指定输入通道对应的主题名
+          destination: minestream
+          #指定该应用实例属于 stream 消费组
+          group: stream
+          contentType: application/json
+          consumer:
+            #通过该参数开启消费者分区功能
+            partitioned: true
+        myOutput:
+          #指定输出通道对应的主题名
+          destination: minestream
+          producer:
+            #通过该参数指定了分区键的表达式规则，可以根据实际的输出消息规则配置 SpEL 来生成合适的分区键
+            partitionKeyExpression: payload
+            partitionCount: 2
+      #该参数指定了当前消费者的总实例数量
+      instance-count: 2
+      #该参数设置了当前实例的索引号，从 0 开始，最大值为 spring.cloud.stream.instance-count 参数 - 1
+      instance-index: 0
