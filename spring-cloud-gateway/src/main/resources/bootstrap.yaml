@@ -4,13 +4,13 @@ server:
 spring:
   application:
     name: spring-cloud-gateway
-  cloud:
-    config:
-      profile: dev
-      label: master
-      discovery:
-        enabled: true
-        service-id: spring-cloud-config
+#  cloud:
+#    config:
+#      profile: dev
+#      label: master
+#      discovery:
+#        enabled: true
+#        service-id: spring-cloud-config
 eureka:
   client:
     service-url:
