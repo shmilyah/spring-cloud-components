@@ -8,9 +8,13 @@ eureka:
     metadata-map:
       management:
         context-path: /gateway/actuator
-    health-check-url: http://localhost:${server.port}/gateway/actuator/health
-    status-page-url: http://localhost:${server.port}/gateway/actuator/info
-    home-page-url: http://localhost:${server.port}/
+#    解决配置了 context-path 的第一种方案
+#    health-check-url: http://localhost:${server.port}/gateway/actuator/health
+#    status-page-url: http://localhost:${server.port}/gateway/actuator/info
+#    home-page-url: http://localhost:${server.port}/
+
+#    解决配置了 context-path 的第二种方案（优化）
+    health-check-url-path: /gateway/actuator/health
 
 server:
   port: 8382
