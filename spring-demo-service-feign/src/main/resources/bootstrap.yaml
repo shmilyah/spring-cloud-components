@@ -6,14 +6,15 @@ eureka:
 #  如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
   instance:
     metadata-map:
+      cluster: SPRING-DEMO-SERVICE-FEIGN
       management:
         context-path: /gateway/actuator
-#    解决配置了 context-path 的第一种方案
+#    解决配置了 context-path 后 spring boot admin 监控第一种方案
 #    health-check-url: http://localhost:${server.port}/gateway/actuator/health
 #    status-page-url: http://localhost:${server.port}/gateway/actuator/info
 #    home-page-url: http://localhost:${server.port}/
 
-#    解决配置了 context-path 的第二种方案（优化）
+#    解决配置了 context-path 后 spring boot admin 监控第二种方案（优化）
     health-check-url-path: /gateway/actuator/health
 
 server:

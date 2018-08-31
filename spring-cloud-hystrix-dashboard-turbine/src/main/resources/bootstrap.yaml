@@ -16,12 +16,22 @@ turbine:
 
 #  2.被监控的服务应用配置了 context-path 的情况下，此时默认是集群里的应用都配置了 context-path
   # 配置 Eureka 中的 serviceId 列表，指定要监控的服务
-  app-config: SPRING-DEMO-SERVICE-FEIGN
+#  app-config: SPRING-DEMO-SERVICE-FEIGN
+#  aggregator:
+#    cluster-config: default
+#  # 指定集群名称
+#  cluster-name-expression: "'default'"
+#  instanceUrlSuffix: gateway/actuator/hystrix.stream
+
+#  3.被监控的服务应用一部分配置了 context-path，一部分没有配置 context-path
+  # 配置 Eureka 中的 serviceId 列表，指定要监控的服务
+  app-config: SPRING-DEMO-SERVICE-FEIGN,SPRING-DEMO-SERVICE-RIBBON
   aggregator:
-    cluster-config: default
+    cluster-config: SPRING-DEMO-SERVICE-FEIGN,SPRING-DEMO-SERVICE-RIBBON
   # 指定集群名称
-  cluster-name-expression: "'default'"
-  instanceUrlSuffix: gateway/actuator/hystrix.stream
+  cluster-name-expression: metadata['cluster']
+  instanceUrlSuffix:
+    SPRING-DEMO-SERVICE-FEIGN: gateway/actuator/hystrix.stream
 
 eureka:
   client:

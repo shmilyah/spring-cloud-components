@@ -2,6 +2,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    metadata-map:
+      cluster: SPRING-DEMO-SERVICE-RIBBON
 server:
   port: 8381
 spring:
