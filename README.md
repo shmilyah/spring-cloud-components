@@ -43,6 +43,7 @@ https://blog.csdn.net/hubo_88/article/details/80598374
 
 把多个hystrix.stream的内容聚合为一个数据源供Dashboard展示，相关文章：  
 https://blog.csdn.net/hubo_88/article/details/80623032  
+https://blog.csdn.net/hubo_88/article/details/82255725  
 
 ### spring-boot-admin
 
